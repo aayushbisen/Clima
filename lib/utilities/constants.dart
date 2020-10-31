@@ -7,11 +7,11 @@ const kTempTextStyle = TextStyle(
 
 const kMessageTextStyle = TextStyle(
   fontFamily: 'Spartan MB',
-  fontSize: 60.0,
+  fontSize: 58.0,
 );
 
 const kButtonTextStyle = TextStyle(
-  fontSize: 30.0,
+  fontSize: 32.0,
   fontFamily: 'Spartan MB',
 );
 
@@ -32,7 +32,7 @@ const kTextFieldInputDecoration = InputDecoration(
   ),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.all(
-      Radius.circular(10.0),
+      Radius.circular(15.0),
     ),
     borderSide: BorderSide.none,
   ),
