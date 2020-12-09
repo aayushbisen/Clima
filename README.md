@@ -1,4 +1,4 @@
-# Clima ☁
+# Clima ⛅
 
 ## What is it? 🤔
 
