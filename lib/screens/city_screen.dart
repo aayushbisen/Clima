@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CityScreen extends StatefulWidget {
   @override
@@ -53,7 +54,7 @@ class _CityScreenState extends State<CityScreen> {
                 },
                 child: Text(
                   'Get Weather',
-                  style: kButtonTextStyle,
+                  style: GoogleFonts.inter(),
                 ),
               ),
             ],

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
 import 'package:clima/services/weather.dart';
 import 'city_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class LocationScreen extends StatefulWidget {
   LocationScreen({this.locationWeather});
@@ -87,7 +89,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       );
                       if (typedName != null) {
                         var weatherData =
-                            await weather.getCityWeather(typedName);
+                        await weather.getCityWeather(typedName);
                         updateUI(weatherData);
                       }
                     },
@@ -104,11 +106,11 @@ class _LocationScreenState extends State<LocationScreen> {
                   children: <Widget>[
                     Text(
                       '$temperature°',
-                      style: kTempTextStyle,
+                      style: GoogleFonts.inter(),
                     ),
                     Text(
                       weatherIcon,
-                      style: kConditionTextStyle,
+                      style: GoogleFonts.inter(),
                     ),
                   ],
                 ),
@@ -118,7 +120,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 child: Text(
                   '$weatherMessage in $cityName',
                   textAlign: TextAlign.right,
-                  style: kMessageTextStyle,
+                  style: GoogleFonts.inter(),
                 ),
               ),
             ],
